@@ -1,10 +1,9 @@
 variable vpc_id {}
 variable app {}
 variable environment{}
-variable ports{}
 
 locals {
-   ports_tcp_all = var.ports
+   ports_tcp_all = [80,443]
 }
 
 
